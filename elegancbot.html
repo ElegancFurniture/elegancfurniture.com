@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Help Chatbot</title>
+		        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link href="elegancbot.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+	<body>
+		<header><h1 class="name">Eleganc Chairs</h1></header><hr>
+<a href="javascript:location.reload(true)" class="fa fa-refresh">Refresh</a>
+
+	<div class="start">
+			<P>Welcome to Eleganc, the one stop solution for your chair needs.</P>
+			<p>Please select a option to continue</p>
+			<center><input onclick="funcf1()" class="option1A" type="button" value="Sign Up"/>
+			<!--<input onclick="funcf2()" class="option1B" type="button" value="Need Support"/>-->
+			<input onclick="funcf3()" class="option1C" type="button" value="Know our services"/>
+			<input onclick="funcf4()" class="option1D" type="button" value="Special Features"/>
+			<!--
+			<input onclick="funcf5()" class="option1E" type="button" value="Talk to Human"/> -->
+			</center>
+	</div><br>
+	<div class="signup" id="signupid">
+			<form>
+  				<label for="fname">Full Name:</label><br>
+  				<input type="text" id="fname" name="fname"><br>
+  				<label for="lname">Email:</label><br>
+  				<input type="email" id="email" name="email"><br>
+					<label for="lname">Mobile No:</label><br>
+  				<input type="number" id="mobno" name="mobno"><br><br>
+					<input class="submitbtn" type="submit" value="Submit" onclick="funcsubmit()">
+			</form>
+	</div>
+	
+	<!--
+	<div class="TalkHuman" id="TalkHumanid">
+		<h3>You have chosen to talk to our support service.</h3>
+		<h3>Please wait, one of our executives will be online soon...</h3>
+		<p>If you think its taking longer, it must be that all support is busy right now.
+			Please fill the form and our team will contact you within an hour. Thank You!</p>
+			<form>
+  				<label for="fname">Full Name:</label><br>
+  				<input type="text" id="fname" name="fname"><br>
+  				<label for="lname">Email:</label><br>
+  				<input type="email" id="email" name="email"><br>
+					<label for="lname">Mobile No:</label><br>
+  				<input type="number" id="mobno" name="mobno"><br>
+					<label for="radio">Contact Mode:</label><br>
+					<input type="radio" id="radio" name="radio" value="Callback"><label>Callback</label><br>
+					<input type="radio" id="radio" name="radio" value="viamail"><label>Via mail</label><br><br>
+					<input class="submitbtn" type="submit" value="Submit" onclick="funcsubmit()">
+			</form>
+	</div>  -->
+	
+		<div class="Features" id="Featuresid">
+			<h3>Our Features</h3>
+			<input class="option2A" type="button" value="E-wallet"/><br>
+			<input class="option2B" type="button" value="Junior EWallet"/><br>
+			<input class="option2D" type="button" value="Transparency"/><br>
+			<input class="option2C" type="button" value="Demo Trading"/><br>
+			<input class="option2E" type="button" value="100% Secure"/><br>
+			<input class="option2F" type="button" value="Virtual Manager"/><br>
+			<input class="option2F" type="button" value="Regular Tips"/><br>
+		</div>
+		<div class="services" id="servicesid">
+			<h3>Our Services</h3>
+			<input class="option3A" type="button" value="Latest E-wallet"/><br>
+			<input class="option3B" type="button" value="All new transaction system"/><br>
+			<input class="option3C" type="button" value="Comparision of bank offers"/><br>
+			<input class="option3D" type="button" value="Junior E-Wallet and Demo Trading"/><br>
+			<input class="option3E" type="button" value="All Basic Banking Services"/><br>
+		</div>
+		<!-- <div class="support" id="supportid">
+			add content for support
+		</div> -->
+        <footer>
+        <div class="main-container"></div>
+            <div id="ask" hidden="true">
+        <input id="inp" placeholder="Ask me" type="text"/>
+       <i class="fas fa-angle-double-right" id="btn"></i>
+        </div>
+
+        </footer>
+
+
+
+
+<script src="elegancbot.js"></script>
+	</body>
+</html>
