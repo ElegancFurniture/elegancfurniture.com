@@ -38,4 +38,11 @@ function initializeClock(id, endtime) {
 }
 
 var deadline = new Date(Date.parse(new Date()) + 30 * 24 * 60 * 60 * 1000);
+
+var time= localStorage.getItem('saved_timer');
+if(time == null) {
+    localStorage.setItem('saved_timer', saved_timer);
+    const saved_timer = (deadline);
+    time = saved_timer;
+}
 initializeClock('clockdiv', deadline);
