@@ -44,5 +44,5 @@ function getTimeRemaining(endtime) {
 			const saved_timer = (deadline);
 			localStorage.setItem('saved_timer', saved_timer);
 		  }
-		  
+		  deadline=time;
 		  initializeClock('clockdiv', time);
