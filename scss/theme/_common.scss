@@ -622,18 +622,7 @@
 		max-width: 70px;
 		height: auto;
 	}
-	.desc2{
-		margin-left: 15px;
-		margin-top: 5px;
-		margin-bottom: 5px;
-			display: inline-block;
-			background: -webkit-linear-gradient(-180deg, #555555, #555555);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			&:hover {
-				@extend .p1-gradient-color;
-			}
-	}
+	
 	.desc {
 		margin-left: 15px;
 		margin-top: 5px;
