@@ -104,7 +104,7 @@
 			<iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.6094674152614!2d77.46793934548816!3d28.53313839272423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4ffd0000001%3A0x892d4c9b35ecdf7f!2sEleganc%20Chairs!5e0!3m2!1sen!2sin!4v1687685394304!5m2!1sen!2sin1" frameborder="0" allowfullscreen></iframe>
 		</div><br><br>
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 my-5">
 					<div class="contact_info">
 						<div class="info_item">
 							<i class="lnr lnr-home"></i>
@@ -123,6 +123,60 @@
 						</div>
 					</div>
 				</div>
+					
+					
+
+  <div class="col-lg-8 ">
+    
+    <div class="container contact_info">
+      <div class="row align-items-stretch justify-content-center no-gutters">
+          <div class="form h-100 contact-wrap p-5 ">
+           <h3 class="text-center">Contact us</h3>
+            <form class="mb-5" action="https://script.google.com/macros/s/AKfycbxRpAiwmxNxhJPdOjg-FhEZNB4uRiaaqPdlRO7BsH28p5S2rSQxxzyofwY93ANNe5w/exec"			" id="contactForm" name="contactForm"id="form" method="POST">
+              <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Name *</label>
+                  <input type="text" class="form-control" name="Name" id="Name" placeholder="Your name">
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Email *</label>
+                  <input type="email" class="form-control" name="Email" id="Email"  placeholder="Your email">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="budget" class="col-form-label">Subject</label>
+                  <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Your subject">
+                </div>
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="message" class="col-form-label">Message *</label>
+                  <textarea class="form-control" name="message" id="message" cols="30" rows="4"  placeholder="Write your message"></textarea>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-5 form-group text-center">
+                  <input type="submit" value="Send Message" class="primary-btn" style="border:none;">
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+
+            <div id="form-message-warning mt-4"></div> 
+			
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    
+    
+
+				
 			</div>
 		</div>
 	</section>
@@ -207,7 +261,66 @@
 	</footer>
 	<!-- End footer Area -->
 
-
+	<script>
+		document.getElementById("form").addEventListener("submit", function (e) {
+		  e.preventDefault(); // Prevent the default form submission
+		  document.getElementById("message").textContent = "Submitting..";
+		  document.getElementById("message").style.display = "block";
+		  document.getElementById("submit-button").disabled = true;
+  
+		  // Collect the form data
+		  var formData = new FormData(this);
+		  var keyValuePairs = [];
+		  for (var pair of formData.entries()) {
+			keyValuePairs.push(pair[0] + "=" + pair[1]);
+		  }
+  
+		  var formDataString = keyValuePairs.join("&");
+  
+		  // Send a POST request to your Google Apps Script
+		  fetch(
+		   "https://script.google.com/macros/s/AKfycbxRpAiwmxNxhJPdOjg-FhEZNB4uRiaaqPdlRO7BsH28p5S2rSQxxzyofwY93ANNe5w/exec",
+			{
+			  redirect: "follow",
+			  method: "POST",
+			  body: formDataString,
+			  headers: {
+				"Content-Type": "text/plain;charset=utf-8",
+			  },
+			}
+		  )
+			.then(function (response) {
+			  // Check if the request was successful
+			  if (response) {
+				return response; // Assuming your script returns JSON response
+			  } else {
+				throw new Error("Failed to submit the form.");
+			  }
+			})
+			.then(function (data) {
+			  // Display a success message
+			  document.getElementById("message").textContent =
+				"Data submitted successfully!";
+			  document.getElementById("message").style.display = "block";
+			  document.getElementById("message").style.backgroundColor = "green";
+			  document.getElementById("message").style.color = "beige";
+			  document.getElementById("submit-button").disabled = false;
+			  document.getElementById("form").reset();
+  
+			  setTimeout(function () {
+				document.getElementById("message").textContent = "";
+				document.getElementById("message").style.display = "none";
+			  }, 2600);
+			})
+			.catch(function (error) {
+			  // Handle errors, you can display an error message here
+			  console.error(error);
+			  document.getElementById("message").textContent =
+				"An error occurred while submitting the form.";
+			  document.getElementById("message").style.display = "block";
+			});
+		});
+	  </script>
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
