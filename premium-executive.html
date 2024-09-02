@@ -39,7 +39,11 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<script src="js/main.js"></script>
+	<script src="js/view-image.js"></script>
+	<script>
+	window.ViewImage && ViewImage.init('#example img, #example a');
+</script>
 </head>
 
 <body>
@@ -48,7 +52,7 @@
 	<header class="header_area sticky-header">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
-				<div class="container">
+				<div class="container" view-image>
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -125,11 +129,11 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-xl-9 col-lg-8 col-md-7">
-
+			<div class="col-xl-9 col-lg-8 col-md-7" id="example" view-image>
+				
 				<!-- Start Best Seller -->
 				<section class="lattest-product-area pb-40 category-list">
-					<div class="row">
+					<div class="row" >
 						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
@@ -737,6 +741,10 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		window.ViewImage && ViewImage.init('#example img, #example a');
+
+	</script>
 </body>
 
 </html>

@@ -39,7 +39,10 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
-
+	<script src="js/view-image.js"></script>
+	<script>
+	window.ViewImage && ViewImage.init('#example2 img, #example2 a');
+</script>
 </head>
 
 <body>
@@ -125,7 +128,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-xl-9 col-lg-8 col-md-7">
+			<div class="col-xl-9 col-lg-8 col-md-7"  id="example2" view-image>
 
 				<!-- Start Best Seller -->
 				<section class="lattest-product-area pb-40 category-list">
