@@ -5792,15 +5792,21 @@ label {
 
 /*# sourceMappingURL=main.css.map */
 
-.botface{
+/* .botface{
 bottom: 2%;
 right: 1%;
 z-index:31;
 position:fixed;
 height:14%;
 border-radius:10px;
-}
+} */
 
+.wa_class{
+  right:3% ;
+  top:75%;
+  position:fixed;
+  z-index: 31;
+}
 #chatbot{
 bottom: 11%;
 right: 1%;
