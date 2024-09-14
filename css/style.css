@@ -9,10 +9,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #4d4643;
-}
+
 
 a {
   color: #f03c02;
@@ -383,18 +380,19 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 } */
-.navbar a,
+/* .navbar a,
 .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 20px;
+  font-weight: bolder;
   font-size: 13px;
   color: #65534c;
   white-space: nowrap;
   text-transform: uppercase;
   transition: 0.3s;
-}
+} */
 
 
 /*--------------------------------------------------------------
@@ -1157,7 +1155,7 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features {
+/* .features {
   padding-top: 0;
 }
 
@@ -1193,7 +1191,7 @@ section {
 
 .features .tab-pane.active {
   animation: slide-down 0.5s ease-out;
-}
+} */
 
 @keyframes slide-down {
   0% {
