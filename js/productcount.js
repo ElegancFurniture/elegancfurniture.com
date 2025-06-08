@@ -1,5 +1,5 @@
 if (!localStorage.getItem('PremiumExecChairCount')) {
-    localStorage.setItem('PremiumExecChairCount', 56);
+    localStorage.setItem('PremiumExecChairCount', 24);
     localStorage.setItem('ExecChairCount', 22);
     localStorage.setItem('WorkstationCount', 11);
     localStorage.setItem('Others', 1);
