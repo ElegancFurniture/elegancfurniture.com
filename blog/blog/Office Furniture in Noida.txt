@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Furniture in Noida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Office Furniture in Noida</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>Office furniture plays a crucial role in creating a productive and comfortable work environment. In Noida, there are numerous options available for businesses looking to furnish their offices.</p>
+        </section>
+        <section>
+            <h2>Types of Office Furniture</h2>
+            <p>From ergonomic chairs to spacious desks, the variety of office furniture available in Noida caters to different needs and preferences. Here are some popular types:</p>
+            <ul>
+                <li>Desks</li>
+                <li>Chairs</li>
+                <li>Cabinets</li>
+                <li>Conference Tables</li>
+                <li>Reception Furniture</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Where to Buy Office Furniture in Noida</h2>
+            <p>There are several reputable stores and online platforms where you can purchase office furniture in Noida. Some of the well-known places include:</p>
+            <ul>
+                <li>Local Furniture Stores</li>
+                <li>Online Marketplaces</li>
+                <li>Specialized Office Furniture Retailers</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            <p>Choosing the right office furniture is essential for enhancing productivity and ensuring employee comfort. Noida offers a wide range of options to suit every business's needs.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Elegance Furniture. All rights reserved.</p>
+    </footer>
+</body>
+</html>
